@@ -16,7 +16,9 @@ fill out `config.js` as your infomation.
 * `community`: your community or team name to display on join page.
 * `slackUrl` : your slack team url (ex: socketio.slack.com)
 * `slacktoken` : access token of slack.
-  You can generate it in <https://api.slack.com/web#auth>
+  You can generate it in <https://api.slack.com/web#auth>.
+  **You should generate the token in admin user, not owner.**
+  If you generate the token in owner user, `missing_scope` error will be occurred.
 
   You can test your token via curl:
 
@@ -38,4 +40,4 @@ $ bin/www
 
 You can access <http://localhost:3000> on your web browser.
 
-![](https://raw.github.com/outsideris/slack-invite-automation/master/screenshots/join-page.png)
+![](https://raw.github.com/outsideris/slack-invite-automation/master/screenshots/join-page.jpg)
